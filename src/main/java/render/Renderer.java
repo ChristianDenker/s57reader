@@ -72,7 +72,8 @@ public final class Renderer {
                 g2.clip(new Rectangle2D.Double(tl.getX(), tl.getY(), (br.getX() - tl.getX()), (br.getY() - tl.getY())));
             }
             g2.setBackground(context.background(map));
-            g2.clearRect(rect.x, rect.y, rect.width, rect.height);
+            //XXX: commented out:
+            //g2.clearRect(rect.x, rect.y, rect.width, rect.height);
             g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
             g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_GASP);
             g2.setStroke(new BasicStroke(0, BasicStroke.CAP_BUTT, BasicStroke.JOIN_MITER));
